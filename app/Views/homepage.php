@@ -46,9 +46,39 @@
 
     <!-- start main -->
     <div
-        class="relative h-screen w-full bg-red-200 overflow-hidden py-6">
-        <div class="absolute top-40 left-0 right-0 mx-auto bg-emerald-200 w-5/6 h-2/3 mx-auto flex">
-            <div class="bg-orange-200 w-3/12 h-full p-2 grid grid-cols-1 gap-10">
+        class="relative h-screen w-full bg-white overflow-hidden py-6">
+        <div class="absolute top-40 left-0 right-0 mx-auto w-5/6 h-2/3 mx-auto flex">
+            <div class="w-3/12 h-full p-2 grid grid-cols-1">
+                <div class="overflow-hidden h-fit">
+
+                    <a href="#"></a>
+                    <div class="">
+                        <div class="relative">
+                            <a href="#">
+                                <img class="w-full"
+                                    src="https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"
+                                    alt="Sunset in the mountains">
+                                <div
+                                    class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="py-1">
+
+                            <a href="#"
+                                class="font-semibold text-lg text-black inline-block hover:underline hover:underline-offset-2">Best
+                                View in Newyork City</a>
+                            <p class="text-black text-sm">
+                                The city that never sleeps
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" py-1 flex flex-row items-center">
+                        <span href="#" class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                            <span class="text-gray-500">6 mins ago</span></span>
+                    </div>
+                </div>
                 <div class="overflow-hidden h-fit">
 
                     <a href="#"></a>
