@@ -12,60 +12,91 @@
         rel="stylesheet"
         type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-black">
     <!-- start navbar -->
-    <nav class="w-full fixed top-0 bg-opacity-0 z-10">
-        <div class="container mx-auto py-5 flex items-center justify justify-between">
-            <div class="flex items-center gap-2 mx-5">
-                <span>JAKITA</span>
+    <nav class="w-full fixed top-0 z-10">
+        <div class="container max-w-full bg-white mx-auto py-4 flex items-center justify justify-between border-b-2 border-slate-300">
+            <div class="w-1/6 flex items-center justify justify-start gap-2 mx-5">
+                <img class="w-7" src="<?php echo base_url() . 'images/loop.png'; ?>" alt="">
             </div>
             <div class="flex items-center gap-2 mx-5">
-                <img alt="Jakita" width="180" height="80" data-sticky-width="82" data-sticky-height="40" src="https://jakita.jakarta.go.id/assets/img/jakita/logo_jak_black.png">
+                <img alt="Jakita" class="w-24" src="https://jakita.jakarta.go.id/assets/img/jakita/logo_jak_black.png">
             </div>
-            <div class="flex items-center gap-2 mx-5">
-                <span>JAKITA</span>
+            <div class="w-1/6 flex items-center justify justify-end gap-2 mx-5">
+                <a class="text-white bg-black font-bold p-3 mx-1" href="#">Register</a>
+                <a class="text-black font-bold mx-1" href="">Login</a>
             </div>
+        </div>
+        <div class="container max-w-full mx-auto bg-white py-5 flex items-center justify justify-center border-b-2 border-slate-300">
+            <ul
+                class="flex text-grey-600 font-semibold text-sm uppercase grid grid-cols-4 divide-x">
+                <li class="hover:text-black font-bold text-black"><a href="#">Home</a></li>
+                <li class="hover:text-black"><a href="#services">Majalah</a></li>
+                <li class="hover:text-black"><a href="#works">Infografis</a></li>
+                <li class="hover:text-black"><a href="#contact">Video Informasi</a></li>
+            </ul>
         </div>
     </nav>
     <!-- end navbar -->
 
-    <!-- start careusel -->
-    <div class="carousel h-screen w-full flex overflow-hidden drop-shadow-md">
-        <div id="slide1" class="carousel-item relative w-full h-screen overflow-hidden">
-            <img
-                src="https://jakita.jakarta.go.id/assets/img/warna_jakarta/5.jpg"
-                class="w-full h-fit" />
-            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                <a href="#slide4" class="btn btn-circle">❮</a>
-                <a href="#slide2" class="btn btn-circle">❯</a>
+    <!-- start main -->
+    <div
+        class="relative h-screen w-full bg-red-200 overflow-hidden py-6">
+        <div class="absolute top-40 left-0 right-0 mx-auto bg-emerald-200 w-5/6 h-2/3 mx-auto flex">
+            <div class="bg-orange-200 w-3/12 h-full p-2 grid grid-cols-1 gap-10">
+                <div class="overflow-hidden h-fit">
+
+                    <a href="#"></a>
+                    <div class="relative">
+                        <a href="#">
+                            <img class="w-full"
+                                src="https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"
+                                alt="Sunset in the mountains">
+                            <div
+                                class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="py-1">
+
+                        <a href="#"
+                            class="font-semibold text-lg text-black inline-block hover:text-indigo-600 transition duration-500 ease-in-out">Best
+                            View in Newyork City</a>
+                        <p class="text-black text-sm">
+                            The city that never sleeps
+                        </p>
+                    </div>
+                    <div class=" py-1 flex flex-row items-center">
+                        <span href="#" class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                            <span class="text-gray-500">6 mins ago</span></span>
+                    </div>
+                </div>
+                <!-- <div class="card card-compact bg-base-100 w-full h-1/2 shadow-xl">
+                        <figure>
+                            <img
+                                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                                alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Shoes!</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div> -->
             </div>
-            <div class="absolute bottom-5 left-0 right-0 flex items-center justify justify-center">
-                <h1 class="text-white text-2xl font-bold">Jakarta Hari Ini</h1>
-                <h1 class="text-white text-2xl font-bold">Jakarta Hari Ini</h1>
-            </div>
-        </div>
-        <div id="slide2" class="carousel-item relative w-full h-screen overflow-hidden">
-            <img
-                src="https://jakita.jakarta.go.id/assets/img/warna_jakarta/3.jpg"
-                class="w-full h-fit" />
-            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                <a href="#slide2" class="btn btn-circle">❮</a>
-                <a href="#slide4" class="btn btn-circle">❯</a>
-            </div>
-        </div>
-        <div id="slide3" class="carousel-item relative w-full">
-            <img
-                src="https://jakita.jakarta.go.id/assets/img/warna_jakarta/8.jpg"
-                class="w-full h-fit" />
-            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                <a href="#slide3" class="btn btn-circle">❮</a>
-                <a href="#slide1" class="btn btn-circle">❯</a>
-            </div>
+            <div class="bg-green-300 w-6/12 h-full"></div>
+            <div class="bg-cyan-200 w-3/12 h-full"></div>
         </div>
     </div>
-    <!-- end careusel -->
+    <!-- end main -->
 
     <script {csp-script-nonce}>
         document.getElementById("menuToggle").addEventListener('click', toggleMenu);
