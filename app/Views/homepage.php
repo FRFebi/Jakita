@@ -14,13 +14,26 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Domine:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        .dm-serif-text-regular {
+            font-family: "DM Serif Text", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .dm-serif-text-regular-italic {
+            font-family: "DM Serif Text", serif;
+            font-weight: 400;
+            font-style: italic;
+        }
+    </style>
 </head>
 
-<body class="bg-black">
+<body class="bg-white dm-serif-text-regular">
     <!-- start navbar -->
-    <nav class="w-full fixed top-0 z-10">
-        <div class="container max-w-full bg-white mx-auto py-4 flex items-center justify justify-between border-b-2 border-slate-300">
+    <nav class="w-full sticky top-0 z-10">
+        <div class="container max-w-full bg-white mx-auto py-3 flex items-center justify justify-between border-b-2 border-slate-300">
             <div class="w-1/6 flex items-center justify justify-start gap-2 mx-5">
                 <img class="w-7" src="<?php echo base_url() . 'images/loop.png'; ?>" alt="">
             </div>
@@ -28,11 +41,11 @@
                 <img alt="Jakita" class="w-24" src="https://jakita.jakarta.go.id/assets/img/jakita/logo_jak_black.png">
             </div>
             <div class="w-1/6 flex items-center justify justify-end gap-2 mx-5">
-                <a class="text-white bg-black font-bold p-3 mx-1" href="#">Register</a>
+                <a class="text-white bg-black font-bold p-2 mx-1" href="#">Register</a>
                 <a class="text-black font-bold mx-1" href="">Login</a>
             </div>
         </div>
-        <div class="container max-w-full mx-auto bg-white py-5 flex items-center justify justify-center border-b-2 border-slate-300">
+        <div class="max-w-full mx-auto bg-white py-3 flex items-center justify justify-center border-b-2 border-slate-300">
             <ul
                 class="flex text-grey-600 font-semibold text-sm uppercase grid grid-cols-4 divide-x">
                 <li class="hover:text-black font-bold text-black"><a href="#">Home</a></li>
@@ -46,13 +59,71 @@
 
     <!-- start main -->
     <div
-        class="relative h-screen w-full bg-white overflow-hidden py-6">
-        <div class="absolute top-40 left-0 right-0 mx-auto w-5/6 h-2/3 mx-auto flex">
-            <div class="w-3/12 h-full p-2 grid grid-cols-1">
-                <div class="overflow-hidden h-fit">
+        class="relative container mx-auto h-screen bg-red-500 py-6 border-b-2 border-slate-900">
+        <div class="absolute top-0 bottom-0 left-0 right-0 m-auto p-2 m-auto grid grid-cols-12">
+            <div class="p-2 grid grid-cols-1 col-span-3">
+                <div class="h-fit">
+                    <a href="#"></a>
+                    <div class="hover:underline hover:underline-offset-2 decoration-black">
+                        <div class="relative">
+                            <a href="#">
+                                <img class="w-full"
+                                    src="https://jakita.jakarta.go.id/assets/img/rubrik/layanan_jakarta_12_2024.jpg"
+                                    alt="Sunset in the mountains">
+                                <div
+                                    class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="py-1">
+
+                            <a href="#"
+                                class="font-semibold text-md text-black inline-block">Pantau Kualitas Udara dengan Platform Digital</a>
+                            <p class="text-slate-400 text-xs inline-block">
+                                Untuk Memantau kualitas udara udara di Jakarta, Pemprov DKI Jakarta meluncurkan platform pertama di Indonesia yang menggabungkan data pemerintah dengan non pemerintah.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center">
+                        <span href="#" class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                            <span class="text-gray-500">6 mins ago</span></span>
+                    </div>
+                </div>
+                <div class="h-fit">
+                    <a href="#"></a>
+                    <div class="hover:underline hover:underline-offset-2 decoration-black">
+                        <div class="relative">
+                            <a href="#">
+                                <img class="w-full"
+                                    src="https://jakita.jakarta.go.id/assets/img/rubrik/layanan_jakarta_12_2024.jpg"
+                                    alt="Sunset in the mountains">
+                                <div
+                                    class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="py-1">
+
+                            <a href="#"
+                                class="font-semibold text-md text-black inline-block">Pantau Kualitas Udara dengan Platform Digital</a>
+                            <p class="text-slate-400 text-xs inline-block">
+                                Untuk Memantau kualitas udara udara di Jakarta, Pemprov DKI Jakarta meluncurkan platform pertama di Indonesia yang menggabungkan data pemerintah dengan non pemerintah.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center">
+                        <span href="#" class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                            <span class="text-gray-500">6 mins ago</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-6 p-2">
+                <div class="">
 
                     <a href="#"></a>
-                    <div class="">
+                    <div class="hover:underline hover:underline-offset-2 decoration-black">
                         <div class="relative">
                             <a href="#">
                                 <img class="w-full"
@@ -67,66 +138,141 @@
                         <div class="py-1">
 
                             <a href="#"
-                                class="font-semibold text-lg text-black inline-block hover:underline hover:underline-offset-2">Best
+                                class="font-semibold text-md text-black inline-block">Best
                                 View in Newyork City</a>
-                            <p class="text-black text-sm">
+                            <p class="text-black text-sm inline-block">
                                 The city that never sleeps
                             </p>
                         </div>
                     </div>
-                    <div class=" py-1 flex flex-row items-center">
+                    <div class="flex flex-row items-center">
                         <span href="#" class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
                             <span class="text-gray-500">6 mins ago</span></span>
                     </div>
                 </div>
-                <div class="overflow-hidden h-fit">
+            </div>
+            <div class="col-span-3 p-2 grid grid-cols-1">
+                <div class="h-fit ">
 
                     <a href="#"></a>
-                    <div class="relative">
-                        <a href="#">
-                            <img class="w-full"
-                                src="https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"
-                                alt="Sunset in the mountains">
-                            <div
-                                class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
-                            </div>
-                        </a>
+                    <div class="hover:underline hover:underline-offset-2 decoration-black">
+                        <div class="py-1">
 
+                            <a href="#"
+                                class="font-semibold text-md text-black inline-block">Best
+                                View in Newyork City</a>
+                            <p class="text-black text-sm inline-block">
+                                The city that never sleeps
+                            </p>
+                        </div>
                     </div>
-                    <div class="py-1">
-
-                        <a href="#"
-                            class="font-semibold text-lg text-black inline-block hover:text-indigo-600 transition duration-500 ease-in-out">Best
-                            View in Newyork City</a>
-                        <p class="text-black text-sm">
-                            The city that never sleeps
-                        </p>
-                    </div>
-                    <div class=" py-1 flex flex-row items-center">
+                    <div class="flex flex-row items-center">
                         <span href="#" class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
                             <span class="text-gray-500">6 mins ago</span></span>
                     </div>
                 </div>
-                <!-- <div class="card card-compact bg-base-100 w-full h-1/2 shadow-xl">
-                        <figure>
-                            <img
-                                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                                alt="Shoes" />
-                        </figure>
-                        <div class="card-body">
-                            <h2 class="card-title">Shoes!</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
-                            <div class="card-actions justify-end">
-                                <button class="btn btn-primary">Buy Now</button>
-                            </div>
+                <div class="h-fit ">
+
+                    <a href="#"></a>
+                    <div class="hover:underline hover:underline-offset-2 decoration-black">
+                        <div class="py-1">
+
+                            <a href="#"
+                                class="font-semibold text-md text-black inline-block">Best
+                                View in Newyork City</a>
+                            <p class="text-black text-sm inline-block">
+                                The city that never sleeps
+                            </p>
                         </div>
-                    </div> -->
+                    </div>
+                    <div class="flex flex-row items-center">
+                        <span href="#" class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                            <span class="text-gray-500">6 mins ago</span></span>
+                    </div>
+                </div>
+                <div class="h-fit ">
+
+                    <a href="#"></a>
+                    <div class="hover:underline hover:underline-offset-2 decoration-black">
+                        <div class="py-1">
+
+                            <a href="#"
+                                class="font-semibold text-md text-black inline-block">Best
+                                View in Newyork City</a>
+                            <p class="text-black text-sm inline-block">
+                                The city that never sleeps
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center">
+                        <span href="#" class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                            <span class="text-gray-500">6 mins ago</span></span>
+                    </div>
+                </div>
+                <div class="h-fit ">
+
+                    <a href="#"></a>
+                    <div class="hover:underline hover:underline-offset-2 decoration-black">
+                        <div class="py-1">
+
+                            <a href="#"
+                                class="font-semibold text-md text-black inline-block">Best
+                                View in Newyork City</a>
+                            <p class="text-black text-sm inline-block">
+                                The city that never sleeps
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center">
+                        <span href="#" class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                            <span class="text-gray-500">6 mins ago</span></span>
+                    </div>
+                </div>
+                <div class="h-fit ">
+
+                    <a href="#"></a>
+                    <div class="hover:underline hover:underline-offset-2 decoration-black">
+                        <div class="py-1">
+
+                            <a href="#"
+                                class="font-semibold text-md text-black inline-block">Best
+                                View in Newyork City</a>
+                            <p class="text-black text-sm inline-block">
+                                The city that never sleeps
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center">
+                        <span href="#" class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                            <span class="text-gray-500">6 mins ago</span></span>
+                    </div>
+                </div>
+                <div class="h-fit ">
+
+                    <a href="#"></a>
+                    <div class="hover:underline hover:underline-offset-2 decoration-black">
+                        <div class="py-1">
+
+                            <a href="#"
+                                class="font-semibold text-md text-black inline-block">Best
+                                View in Newyork City</a>
+                            <p class="text-black text-sm inline-block">
+                                The city that never sleeps
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center">
+                        <span href="#" class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                            <span class="text-gray-500">6 mins ago</span></span>
+                    </div>
+                </div>
             </div>
-            <div class="bg-green-300 w-6/12 h-full"></div>
-            <div class="bg-cyan-200 w-3/12 h-full"></div>
         </div>
     </div>
     <!-- end main -->
+    <div class="relative container h-screen w-full bg-white mx-auto">
+
+    </div>
 
     <script {csp-script-nonce}>
         document.getElementById("menuToggle").addEventListener('click', toggleMenu);

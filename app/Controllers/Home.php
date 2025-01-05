@@ -12,4 +12,12 @@ class Home extends BaseController
     {
         return view('homepage');
     }
+    public function homepage2(): string
+    {
+        return view('homepage2');
+    }
+    public function homepage3(): string
+    {
+        return view('homepage3');
+    }
 }
