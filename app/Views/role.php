@@ -32,7 +32,6 @@
                         <?= implode(', ', $user->getGroups()); ?>
                     </td>
                     <td class="px-4 py-2">
-                        <!-- Assign Role -->
                         <form method="POST" action="/role/updateRole" class="inline-block">
                             <?= csrf_field(); ?>
                             <input type="hidden" name="user_id" value="<?= esc($user->id); ?>">
@@ -44,7 +43,6 @@
                             <button class="bg-blue-500 text-white px-2 py-1">Assign</button>
                         </form>
 
-                        <!-- Remove Role -->
                         <form method="POST" action="/role/removeRole" class="inline-block">
                             <?= csrf_field(); ?>
                             <input type="hidden" name="user_id" value="<?= esc($user->id); ?>">
