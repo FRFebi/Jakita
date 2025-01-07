@@ -1,0 +1,26 @@
+services:
+  jakita:
+    build: .
+    container_name: jakita
+    ports:
+      - "${PORT:-8080}:80"
+    environment:
+      - DB_HOST=db-jakita
+      - DB_PORT=5432
+      - DB_USER=${DB_USER:-postgres}
+      - DB_PASSWORD=${DB_PASSWORD:-1234567890}
+      - DB_NAME=${DB_NAME:-db-jakita}
+    depends_on:
+      - db-jakita # Ensure payment-db starts first
+
+  db-jakita:
+    image: postgres
+    container_name: db-jakita
+    ports:
+      - 5433:5432
+    volumes:
+      - ./db-jakita:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: ${DB_USER:-postgres} # Use variable from .env
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-1234567890} # Use variable from .env
+      POSTGRES_DB: ${DB_NAME:-db-jakita} # Use variable from .env
